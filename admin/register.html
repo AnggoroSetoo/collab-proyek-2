@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
+    <title>Register</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -17,19 +17,26 @@
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition login-page">
-    <div class="login-box">
-        <!-- /.login-logo -->
+<body class="hold-transition register-page">
+    <div class="register-box">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
                 <a href="../../index2.html" class="h1">Klinik gigi <b>ESC</b></a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Silahkan login</p>
+                <p class="login-box-msg">Daftar akun</p>
 
-                <form onsubmit="login()">
+                <form action="../../index.html" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email" id="username">
+                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -37,7 +44,15 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password" id="password">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Retype password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -46,24 +61,20 @@
                     </div>
                     <div class="row">
                         <!-- /.col -->
-                        <div class="col-12 float-right">
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
                         </div>
                         <!-- /.col -->
                     </div>
                 </form>
 
-                <!-- /.social-auth-links -->
 
-                <p class="mt-2">
-                    <a href="register.html" class="text-center">Belum punya akun? silahkan daftar disini</a>
-                </p>
+                <a href="login.html" class="text-center">Sudah punya akun? silahkan login disini</a>
             </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
+            <!-- /.form-box -->
+        </div><!-- /.card -->
     </div>
-    <!-- /.login-box -->
+    <!-- /.register-box -->
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
@@ -71,7 +82,6 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
-    <script src="otentikasi.js"></script>
 </body>
 
 </html>
