@@ -9,7 +9,7 @@ function login() {
         alert("Selamat Datang Admin!");
         location.replace("index.html");
     } else {
-        alert("Selamat Datang Pelanggan!");
+        alert("Selamat Datang!");
         location.replace("../index.html");
     }
 }
