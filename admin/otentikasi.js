@@ -6,9 +6,10 @@ function login() {
 
     if (uname == "admin@admin.com" && pass == "escadmin") {
 
-        alert("Login Berhasil");
+        alert("Selamat Datang Admin!");
         location.replace("index.html");
     } else {
-        alert("Username atau password salah");
+        alert("Selamat Datang Pelanggan!");
+        location.replace("../index.html");
     }
 }

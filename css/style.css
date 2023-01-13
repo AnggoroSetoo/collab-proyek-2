@@ -6,7 +6,7 @@ html {
 
 :root {
     --primary: #13C5DD;
-    --secondary: #354F8E;
+    --secondary: #2B5788;
     --light: #EFF5F9;
     --dark: #1D2A4D;
 }
@@ -109,7 +109,7 @@ html {
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    background: url(../img/background-1.jpg) top right no-repeat;
     background-size: cover;
 }
 

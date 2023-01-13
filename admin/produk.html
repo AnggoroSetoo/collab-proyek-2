@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin - Klinik Gigi ESC</title>
-    <link href="../img/icon.png" rel="icon">
 
+    <link href="../img/icon.png" rel="icon">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -120,15 +120,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="dokter.html" class="nav-link active">
+                                    <a href="dokter.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p><b>Dokter</b></p>
+                                        <p>Dokter</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="produk.html" class="nav-link">
+                                    <a href="produk.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Produk/Layanan</p>
+                                        <p><b>Produk/Layanan</b></p>
                                     </a>
                                 </li>
                                 <hr>
@@ -154,12 +154,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Data Dokter</h1>
+                            <h1 class="m-0">Data Produk dan Layanan</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Data Dokter</li>
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Data Produk</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -174,29 +174,17 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <table class="table">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>
                                             #
                                         </th>
                                         <th>
-                                            Nama Dokter
+                                            Nama Layanan
                                         </th>
                                         <th>
-                                            Gender
-                                        </th>
-                                        <th>
-                                            Keahlian
-                                        </th>
-                                        <th>
-                                            Telpon
-                                        </th>
-                                        <th>
-                                            Email
-                                        </th>
-                                        <th>
-                                            Deskripsi
+                                            Jadwal
                                         </th>
                                         <th>
                                             Action
@@ -209,22 +197,10 @@
                                             1
                                         </td>
                                         <td>
-                                            Drg. Amalia
+                                            Pemeriksaan Gigi Anak
                                         </td>
                                         <td>
-                                            Perempuan
-                                        </td>
-                                        <td>
-                                            Spesialis Gigi
-                                        </td>
-                                        <td>
-                                            086186334333
-                                        </td>
-                                        <td>
-                                            amalia00@gmail.com
-                                        </td>
-                                        <td>
-                                            Drg. Amalia adalah founder...
+                                            Senin, Rabu, Jumat
                                         </td>
                                         <td>
                                             <button type="button"
@@ -242,22 +218,10 @@
                                             2
                                         </td>
                                         <td>
-                                            Drg. Kurniawan
+                                            Bleaching Gigi
                                         </td>
                                         <td>
-                                            Laki-laki
-                                        </td>
-                                        <td>
-                                            Spesialis Gigi
-                                        </td>
-                                        <td>
-                                            086186339163
-                                        </td>
-                                        <td>
-                                            kurniawan1@gmail.com
-                                        </td>
-                                        <td>
-                                            Drg. Kurniawan adalah sala...
+                                            Setiap Hari
                                         </td>
                                         <td>
                                             <button type="button"
@@ -275,22 +239,10 @@
                                             3
                                         </td>
                                         <td>
-                                            Drg. Junaedi
+                                            Konsultasi
                                         </td>
                                         <td>
-                                            Laki-laki
-                                        </td>
-                                        <td>
-                                            Spesialis Gigi
-                                        </td>
-                                        <td>
-                                            086186318038
-                                        </td>
-                                        <td>
-                                            junaedi19@gmail.com
-                                        </td>
-                                        <td>
-                                            Drg. Junaedi adalah salah s...
+                                            Setiap Hari
                                         </td>
                                         <td>
                                             <button type="button"
@@ -308,22 +260,52 @@
                                             4
                                         </td>
                                         <td>
-                                            Drg. Budiman
+                                            Cabut Gigi
                                         </td>
                                         <td>
-                                            Laki-laki
+                                            Senin - Sabtu
                                         </td>
                                         <td>
-                                            Spesialis Gigi
+                                            <button type="button"
+                                                class="btn btn-small bg-gradient-success btn-xs">Edit</button>
+                                            |
+                                            <button type="button"
+                                                class="btn btn-small bg-gradient-primary btn-xs">Edit</button>
+                                            |
+                                            <button type="button"
+                                                class="btn btn-small bg-gradient-danger btn-xs">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            5
                                         </td>
                                         <td>
-                                            086182339164
+                                            Tambal gigi
                                         </td>
                                         <td>
-                                            budiman99@gmail.com
+                                            Setiap Hari
                                         </td>
                                         <td>
-                                            Drg. Budiman adalah salah...
+                                            <button type="button"
+                                                class="btn btn-small bg-gradient-success btn-xs">Edit</button>
+                                            |
+                                            <button type="button"
+                                                class="btn btn-small bg-gradient-primary btn-xs">Edit</button>
+                                            |
+                                            <button type="button"
+                                                class="btn btn-small bg-gradient-danger btn-xs">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            6
+                                        </td>
+                                        <td>
+                                            Pasang Behel
+                                        </td>
+                                        <td>
+                                            Setiap Hari
                                         </td>
                                         <td>
                                             <button type="button"
