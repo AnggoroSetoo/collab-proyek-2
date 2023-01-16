@@ -1,7 +1,12 @@
 /********** Template CSS **********/
+
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary: #13C5DD;
-    --secondary: #354F8E;
+    --secondary: #2B5788;
     --light: #EFF5F9;
     --dark: #1D2A4D;
 }
@@ -9,6 +14,13 @@
 .btn {
     font-weight: 700;
     transition: .5s;
+}
+
+.tmbl-lgn {
+    padding: 5px 5px 5px 5px;
+    height: 50px;
+    width: 70px;
+    border-radius: 40%;
 }
 
 .btn:hover {
@@ -71,7 +83,7 @@
 }
 
 @media (min-width: 992px) {
-    .navbar-light .navbar-nav .nav-link::before {
+    .navbar-light .navbar-nav .nav-link::before .akses-cepat {
         position: absolute;
         content: "";
         width: 0;
@@ -82,6 +94,12 @@
         transition: .5s;
     }
 
+    .akses-cepat {
+        height: 150px;
+        background-color: #F2F2F2;
+        border-radius: 5px;
+    }
+
     .navbar-light .navbar-nav .nav-link:hover::before,
     .navbar-light .navbar-nav .nav-link.active::before {
         width: 100%;
@@ -90,14 +108,20 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
+    }
+
+    .akses-cepat {
+        height: 150px;
+        background-color: #F2F2F2;
+        border-radius: 5px;
     }
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    background: url(../img/background-1.jpg) top right no-repeat;
     background-size: cover;
 }
 
@@ -158,7 +182,7 @@
 }
 
 .price-carousel .owl-nav .owl-prev,
-.price-carousel .owl-nav .owl-next{
+.price-carousel .owl-nav .owl-next {
     position: relative;
     margin: 0 5px;
     width: 45px;
@@ -179,8 +203,14 @@
 }
 
 @media (min-width: 576px) {
-    .team-item .row {
+    .team-item .row .akses-cepat {
         height: 350px;
+    }
+
+    .akses-cepat {
+        height: 200px;
+        background-color: #F2F2F2;
+        border-radius: 5px;
     }
 }
 
